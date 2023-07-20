@@ -1,0 +1,33 @@
+﻿To break down the problem, we need to ask several questions to understand the requirements and constraints:
+
+How are the influence relationships represented?
+
+Each person is represented by a distinct integer.
+We need to determine who influenced whom.
+How do we define a chain of influence?
+
+A chain of influence is a succession of thoughts from one person to another.
+It starts with an influencer and passes through a series of influenced people.
+We are interested in finding the longest possible chain of influence.
+Are there any constraints or limitations?
+
+Mutual influence between people is not allowed.
+A person cannot influence themselves.
+What is the desired output?
+
+We need to determine the length of the longest chain of influence.
+How do we calculate the length of the longest chain of influence?
+
+We can represent the influence relationships using a graph.
+Each person will be a node, and an edge between two nodes indicates influence.
+We need to find the longest path (chain) in this graph.
+
+Given a set of influence relationships between people, represented as a graph, we need to find the longest possible chain of influence. 
+The influence relationships are represented by directed edges in the graph. We are looking for the longest path in the graph, considering the constraints that mutual influence and self-influence are not allowed.
+
+To solve this problem, we can use graph traversal algorithms such as depth-first search (DFS) or breadth-first search (BFS) to explore the graph and find the longest path.
+We keep track of the current chain length during the traversal and update the maximum chain length as we encounter longer paths.
+
+- We will integrate concepts such as: Recursion to traverse the graph.
+- Memoization to keep track of the traversal and reduce time-complexity. 
+- Dictionaries/Tuples to keep validation of the nodes. (Influenced and Influencer)
