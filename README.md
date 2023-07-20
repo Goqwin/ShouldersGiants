@@ -11,17 +11,19 @@ When we read texts, we often only get a small glance of this dependence: this pe
  	Rules
 We choose to represent each person by a distinct integer. If person #1 has influenced persons #2 and #3 and person #3 has influenced #4 then there is a succession of thoughts between #1, #3 and #4. In this case, it’s the longest succession and the expected result will be 3, since it involves 3 people.
 
-![image](https://github.com/Goqwin/ShouldersGiants/assets/115321545/c934b2f6-eecf-4b13-b605-23185bdd8455)
+![image](https://github.com/Goqwin/ShouldersGiants/assets/115321545/a7c6bba3-63c2-4392-979e-0f3cd8b37b1f)
+
 
  
 If we were to complete this example when we learn that person #2 also influenced persons #4 and #5, then the longest succession will still have a length of 3, but there will now be several of them.
 
-![image](https://github.com/Goqwin/ShouldersGiants/assets/115321545/46f21598-a71f-4f92-990f-ad7d6fa0988b)
+![image](https://github.com/Goqwin/ShouldersGiants/assets/115321545/8f02bb6c-24fd-4689-94f2-3aa12b5e012a)
+
 
  
 If we now add that person #10 influenced person #11, the result remains 3. However, as soon as we learn that #10 also influenced #1 and #3, then the result becomes 4, since there is now a succession involving 4 people, which is #10, #1, #2, #5.
 
-![image](https://github.com/Goqwin/ShouldersGiants/assets/115321545/7348ea80-bdd5-441c-8526-7984d3b7b16f)
+![image](https://github.com/Goqwin/ShouldersGiants/assets/115321545/7755df94-3d37-4a47-8ef6-646f0f6396d9)
 
 
  
